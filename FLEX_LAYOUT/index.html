@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        .header{
+            display: flex;
+        }
+        .item{
+            background-color: aqua;
+            padding: 20px;
+            flex-grow: 0.3;
+        }
+        .item1{
+            background-color: orangered;
+            padding: 40px;
+            flex-grow: 2;
+        }
+        .nav{
+            display:flex;
+        }
+        .nav li {
+            margin-right: 20px; 
+            list-style: none;
+        }
+        .middle{  
+            height:700px;
+            width: 100%;
+        }
+        .second-middle{
+            display: flex;
+            background-color: aqua;
+        }
+        .infosys{
+            flex:1;
+            height:200px;
+            width:448px;
+        }
+        .dell{
+            height:100px;
+            width:448px;
+        }
+        .flipkart{
+            height:100px;
+            width:448px;
+        }
+        .amazon{
+            height:200px;
+            flex:1;
+            width:448px;
+        }       
+        .dellandflipkart{
+            flex:1;
+        }
+        .footer{
+            display: flex;
+            background-color: rgb(174, 174, 194);
+        }
+        .img_content{
+            /* flex-direction: column; */
+            flex:1;
+        }
+        .company{
+            flex:1;
+        }
+        .company li a{
+            text-decoration: none;
+            color:black;
+        }
+        .courses{
+            flex:1;
+        }
+        .courses li a{
+            text-decoration: none;
+            color:black;
+        }
+        .contact{
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="item">
+                <img src="./assets/logo.html.png" alt="logo">
+            </div>
+            <div class="item1">
+                <ul class="nav">
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>CONTACT</li>
+                    <li>PORTFOLIO</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <img class="middle" src="./assets/process.html.jpg" alt="process">
+        </div>
+        <div class="second-middle">
+            <div>
+                <img class="infosys" src="./assets/infosys.html.png" alt="infosys">
+            </div>
+            <div class="dellandflipkart">
+                <div>
+                    <img class="dell" src="./assets/dell.html.png" alt="dell">
+                </div>
+                <div>
+                    <img class="flipkart" src="./assets/flipkart.html.png" alt="flipkart">
+                </div>
+            </div>
+            <div>
+                <img class="amazon" src="./assets/amazon.html.png" alt="amazon">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="img_content">
+                <div>
+                    <img class="img" src="./assets/logo.html.png" alt="AchieversIT Software Training Institute in Bangalore">
+                </div>
+                <div>
+                    <p class="content">AchieversIT - Provides a wide group of opportunities 
+                        for freshers and Experienced candidate who can develop their skills 
+                        and build their career opportunities across multiple Companies.</p>
+                </div>
+            </div>            
+            <div class="company">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="corporate.html">Corporate Trianing</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul> 
+            </div>
+            <div class="courses">
+                <h3>TRENDING COURSES</h3>
+                <ul class="u">
+                    <li><a href="ui_development_course.html">UI Dvelopment Courses</a></li>
+                    <li><a href="angularjs_course.html">Angular JS Course</a></li>
+                    <li><a href="reactjs_course.html">React JS Course</a></li>
+                    <li><a href="digitalmarketing_course.html">Digital Marketing Course</a></li>
+                    <li><a href="python_course.html">Python Course</a></li>
+                </ul> 
+            </div>
+            <div class="contact">
+                <h3>CONTACT INFO</h3>
+                <ul>
+                    <li>#63,1st Floor,16th Main, 8th Cross,BTM 1st Stage
+                        Banglore,India-560029</li>
+                    <li>India: +91 8431-040-457</li>
+                    <li>info@achieversit.com</li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

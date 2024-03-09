@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform,Transition,Animation</title>
+    <style>
+    .circle{
+        width:200px;
+        height:200px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 50%;
+        border:1px solid blue;
+        text-align: center;
+        line-height: 200px;
+        position: relative; 
+        background: linear-gradient(orange,white,green);
+    }
+    .triangle {
+        width: 0;
+        height: 0;
+        text-align: center;
+        line-height: 50px;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid red;
+        margin-top:100px;
+        background: linear-gradient(orange,white,green);
+        position: relative;
+    }
+    .Parallelogram{
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        transform: skew(20deg);
+        background-color: blue;
+        margin-top:100px;
+        left:100px;
+        background: linear-gradient(orange,white,green);
+        position: relative;
+    }
+    .circle:hover{
+            /* transform: scale(1.1); */       
+            animation-name: circle_animation;
+            animation-delay: 1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes circle_animation{
+            from{
+                /* transform: translate(0px); */
+                transform: rotate(0deg);  
+                background-color: red;
+                left:0px;
+            }
+            to{
+                left:500px;
+                transform: rotate(360deg);  
+                /* transform: translate(500px); */
+                background-color: pink;
+            }
+        }
+        
+    .triangle:hover{
+        /* transform: scale(1.1); */
+        background-color: red;
+        animation-name: triangle_animation;
+        animation-delay: 1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes triangle_animation{
+        from{
+            /* transform: translate(0px); */
+            transform:rotate(90deg);
+            left:0px;
+        }
+        to{
+            left:500px;
+            /* transform: translate(500px); */
+        }
+    }
+    .Parallelogram:hover{
+        /* transform: scale(1.1); */
+        background-color: red;
+        transform:rotate(90deg);   
+        animation-name: Parallelogram_animation;
+        animation-delay: 1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        }
+    @keyframes Parallelogram_animation{
+    from{
+            /* transform: translate(0px); */
+            transform: rotate(0deg);
+            left:0px;
+        }
+        to{
+            left:500px;
+            /* transform: translate(500px); */
+            transform: rotate(270deg);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="circle">its a circle</div>
+    <div class="triangle">its a triangle</div>
+    <div class="Parallelogram">its a parallgram</div>
+</body>
+</html>
